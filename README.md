@@ -1,2 +1,35 @@
-# Kaggle-Titanic
-Kaggle竞赛入门项目——泰坦尼克号幸存者预测
+# 项目思路
+- 数据导入与预处理
+	- 模块导入
+	- 数据导入
+	- 了解数据
+	- 缺失值填充
+	- 数据分割
+- 特征工程
+	- 特征简介
+		- PassengerId：乘客ID
+		- Survived：是否幸存。0遇难，1幸存
+		- Sex：性别
+		- Name：姓名
+		- Ticket：船票号
+		- Cabin：所在舱位
+		- Embarked：登船口岸
+		- SibSp：兄弟姐妹和配偶个数
+		- Parch：父母和子女个数
+		- Pclass：船舱等级
+		- Age：年龄
+		- Fare：船票价格
+	- 特征处理步骤
+		- 特征提取
+		- 画图分析特征
+		- 对特征值归类处理
+		- 对特征进行one_hot编码
+	- 特征选择
+- 模型训练与预测
+	- 使用随机森林算法建立模型
+	- 训练模型
+	- 模型特征重要性检测
+	- 预测并生成预测结果文件
+- 提交结果
+
+![Leaderboard](https://github.com/linwt/Kaggle-Titanic/blob/master/input/Leaderboard.png)

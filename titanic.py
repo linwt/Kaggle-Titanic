@@ -31,7 +31,7 @@ test.describe()
 # 缺失值填充
 train.loc[pd.isnull(train.Embarked), ['Embarked']] = train['Embarked'].mode()
 train.loc[pd.isnull(train.Age), ['Age']] = train['Age'].mean()
-test.loc[pd.isnull(test.Fare),'Fare'] = train['Fare'].mean()
+test.loc[pd.isnull(test.Fare),['Fare']] = train['Fare'].mean()
 test.loc[pd.isnull(train.Age), ['Age']] = train['Age'].mean()
 
 # 数据分割，拆分成训练集和验证集
